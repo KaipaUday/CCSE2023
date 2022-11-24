@@ -1124,12 +1124,16 @@ section {
   border-radius: 5px;
   background: #fff;
   transition: 0.5s;
+  margin-bottom: 15px;
 }
 
 .team .member .pic {
   overflow: hidden;
   width: 180px;
+  height: 180px;
   border-radius: 50%;
+  background-size: cover;
+  background-position: center;
 }
 
 .team .member .pic img {
@@ -1142,6 +1146,7 @@ section {
 
 .team .member .member-info {
   padding-left: 30px;
+  padding-top: 15px;
 }
 
 .team .member h4 {
@@ -1852,5 +1857,19 @@ section {
 
   #footer .credits {
     padding-top: 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .pic {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .pic {
+    width: 80px !important;
+    height: 80px !important;
   }
 }
